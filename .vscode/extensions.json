@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ryannaddy.laravel-artisan",
+    "onecentlin.laravel-blade",
+    "editorconfig.editorconfig",
+    "shufo.vscode-blade-formatter"
+  ]
+}

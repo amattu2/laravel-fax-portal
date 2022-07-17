@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "1e669a76-c088-4e3d-821a-5e7288cdca90",
+    "colId": "e67492d7-510d-4789-a5d9-649f6d2f8b55",
+    "containerId": "",
+    "name": "Receive",
+    "url": "{{appUrl}}/fax",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-07-17T15:05:25.370Z",
+    "modified": "2022-07-17T15:57:48.905Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "From",
+          "value": "+3019500000"
+        },
+        {
+          "name": "To",
+          "value": "+4109990000"
+        },
+        {
+          "name": "Sid",
+          "value": "{{#guid}}"
+        },
+        {
+          "name": "MediaUrl",
+          "value": "ABC.com"
+        }
+      ]
+    },
+    "tests": [],
+    "docs": "A emulator request for receiving faxes from \"Twilio\" to the application"
+  },
+  {
+    "_id": "05ab0e77-4f2c-4a28-9d44-a8464595adf5",
+    "colId": "e67492d7-510d-4789-a5d9-649f6d2f8b55",
+    "containerId": "",
+    "name": "Store Media",
+    "url": "{{appUrl}}/fax/{faxId}",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-07-17T16:01:49.869Z",
+    "modified": "2022-07-17T16:04:59.049Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "faxId",
+        "value": "1",
+        "isPath": true
+      }
+    ],
+    "body": {
+      "type": "binary",
+      "raw": "",
+      "form": [],
+      "binary": "Example.pdf"
+    },
+    "tests": [],
+    "docs": "A emulator request for receiving faxes from \"Twilio\" to the application"
+  }
+]
