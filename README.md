@@ -4,9 +4,10 @@ This is a W.I.P. portal to receive incoming faxes from the Twilio API, and forwa
 
 ## To-Do
 
-- [ ] Process incoming faxes and store them
+- [X] Process incoming faxes and store them
 - [ ] Require basic auth for the Twilio API
 - [ ] Build a basic listing of faxes enabled only during debug mode
+- [ ] Test with Twilio on a Dev env
 
 ## Notes
 
